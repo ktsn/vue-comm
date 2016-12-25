@@ -56,5 +56,8 @@
     "tslib": "^1.4.0",
     "vue-class-component": "^4.4.0",
     "vue-vnode-helper": "^0.3.0"
+  },
+  "peerDependencies": {
+    "vue": "^2.0.0"
   }
 }
