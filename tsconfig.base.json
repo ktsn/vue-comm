@@ -8,14 +8,9 @@
       "es2015"
     ],
     "importHelpers": true,
-    "outDir": "lib",
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "strictNullChecks": true,
-    "declaration": true
-  },
-  "include": [
-    "src/**/*.ts"
-  ]
+    "strictNullChecks": true
+  }
 }
