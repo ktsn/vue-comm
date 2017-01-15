@@ -1,6 +1,6 @@
 {
   "name": "vue-comm",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "katashin",
   "description": "An experiment of Vue.js type safety",
   "keywords": [
