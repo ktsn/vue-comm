@@ -1,6 +1,6 @@
-# template-ts
+# vue-typed-component
 
-A project template for a TypeScript library.
+An experiment of Vue.js type safety.
 
 ## License
 

@@ -1,23 +1,27 @@
 {
-  "name": "foobar",
+  "name": "vue-typed-component",
   "version": "0.0.0",
   "author": "katashin",
-  "private": true,
-  "description": "",
-  "keywords": [],
+  "description": "An experiment of Vue.js type safety",
+  "keywords": [
+    "Vue.js",
+    "component",
+    "type",
+    "TypeScript"
+  ],
   "license": "MIT",
-  "main": "dist/foobar.cjs.js",
+  "main": "dist/vue-typed-component.cjs.js",
   "jsnext:main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "dist",
     "lib"
   ],
-  "homepage": "https://github.com/ktsn/foobar",
-  "bugs": "https://github.com/ktsn/foobar/issues",
+  "homepage": "https://github.com/ktsn/vue-typed-component",
+  "bugs": "https://github.com/ktsn/vue-typed-component/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ktsn/foobar.git"
+    "url": "https://github.com/ktsn/vue-typed-component.git"
   },
   "scripts": {
     "prepublish": "npm run test:ci && npm run clean && npm run build",
@@ -26,7 +30,7 @@
     "build:ts": "tsc -p src",
     "build:cjs": "rollup -c scripts/rollup.config.js --environment BUILD:commonjs",
     "build:dev": "rollup -c scripts/rollup.config.js --environment BUILD:development",
-    "build:prod": "rollup -c scripts/rollup.config.js --environment BUILD:production | uglifyjs -mc warnings=false --comments -o dist/foobar.min.js",
+    "build:prod": "rollup -c scripts/rollup.config.js --environment BUILD:production | uglifyjs -mc warnings=false --comments -o dist/vue-typed-component.min.js",
     "example": "webpack --config example/webpack.config.js",
     "watch:test": "webpack --watch --config scripts/webpack.config.test.js",
     "lint": "tslint \"src/**/*.ts\" && tslint \"test/**/*.ts\"",

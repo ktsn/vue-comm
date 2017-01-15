@@ -5,7 +5,7 @@ const meta = require('../package.json')
 
 const config = {
   entry: 'lib/index.js',
-  moduleName: 'Lib',
+  moduleName: 'VueTypedComponent',
   exports: 'named',
   plugins: [
     nodeResolve({
@@ -24,11 +24,11 @@ const config = {
   },
   banner: `/*!
  * ${meta.name} v${meta.version}
- * (c) 2016 ${meta.author}
+ * (c) 2016-2017 ${meta.author}
  * ${meta.homepage}
  *
  * Includes vue-class-component
- * (c) 2015-2016 Evan You
+ * (c) 2015-2017 Evan You
  * https://github.com/vuejs/vue-class-component
  *
  * @license
