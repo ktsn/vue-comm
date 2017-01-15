@@ -1,5 +1,5 @@
 {
-  "name": "vue-typed-component",
+  "name": "vue-comm",
   "version": "0.0.0",
   "author": "katashin",
   "description": "An experiment of Vue.js type safety",
@@ -10,18 +10,18 @@
     "TypeScript"
   ],
   "license": "MIT",
-  "main": "dist/vue-typed-component.cjs.js",
+  "main": "dist/vue-comm.cjs.js",
   "jsnext:main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "dist",
     "lib"
   ],
-  "homepage": "https://github.com/ktsn/vue-typed-component",
-  "bugs": "https://github.com/ktsn/vue-typed-component/issues",
+  "homepage": "https://github.com/ktsn/vue-comm",
+  "bugs": "https://github.com/ktsn/vue-comm/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ktsn/vue-typed-component.git"
+    "url": "https://github.com/ktsn/vue-comm.git"
   },
   "scripts": {
     "prepublish": "npm run test:ci && npm run clean && npm run build",
@@ -30,7 +30,7 @@
     "build:ts": "tsc -p src",
     "build:cjs": "rollup -c scripts/rollup.config.js --environment BUILD:commonjs",
     "build:dev": "rollup -c scripts/rollup.config.js --environment BUILD:development",
-    "build:prod": "rollup -c scripts/rollup.config.js --environment BUILD:production | uglifyjs -mc warnings=false --comments -o dist/vue-typed-component.min.js",
+    "build:prod": "rollup -c scripts/rollup.config.js --environment BUILD:production | uglifyjs -mc warnings=false --comments -o dist/vue-comm.min.js",
     "example": "webpack --config example/webpack.config.js",
     "watch:test": "webpack --watch --config scripts/webpack.config.test.js",
     "lint": "tslint \"src/**/*.ts\" && tslint \"test/**/*.ts\"",

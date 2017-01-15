@@ -5,7 +5,7 @@ const meta = require('../package.json')
 
 const config = {
   entry: 'lib/index.js',
-  moduleName: 'VueTypedComponent',
+  moduleName: 'VueComm',
   exports: 'named',
   plugins: [
     nodeResolve({

@@ -1,4 +1,4 @@
-# vue-typed-component
+# vue-comm
 
 This project is an experiment to achieve type safety on Vue.js. The API is unstable and I cannot say that this can be used on actual applications.
 
@@ -20,7 +20,7 @@ import {
 
   // Type having builtin render helpers
   Helpers
-} from 'vue-typed-component'
+} from 'vue-comm'
 
 const { Comm } = comm
   // Define prop types by using `$` helper
