@@ -1,6 +1,6 @@
-import { Helpers, component, $, comm } from '../'
+import { Helpers, Component, helper, $, comm } from '../../'
 
-const { Component } = comm
+const { Comm } = comm
   .props({
     value: $(Number)
   })
@@ -8,7 +8,8 @@ const { Component } = comm
     input (value: number): void
   }>()
 
-class Counter extends Component {
+@Component
+class Counter extends Comm {
   onIncrement () {
     this.$emit('input', this.$props.value + 1)
   }
@@ -26,4 +27,4 @@ class Counter extends Component {
   }
 }
 
-export const counter = component(Counter)
+export const counter = helper(Counter)

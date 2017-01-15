@@ -1,7 +1,8 @@
-import { Helpers, component, comm } from '../'
+import { Helpers, Component, helper, comm } from '../../'
 import { counter } from './counter'
 
-class App extends comm.Component {
+@Component
+class App extends comm.Comm {
   count: number = 0
 
   onInput (value: number) {
@@ -19,4 +20,4 @@ class App extends comm.Component {
   }
 }
 
-export const app = component(App)
+export const app = helper(App)

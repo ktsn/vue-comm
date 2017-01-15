@@ -5,7 +5,7 @@ import { mapValues } from './utils'
 import { Class, Dictionary } from './types/utils'
 
 export interface CommChain<P, E> {
-  readonly Component: Class<Vue<P, E>>
+  readonly Comm: Class<Vue<P, E>>
 
   props <PN>(
     chain?: { readonly [K in keyof PN]: PropChain<PN[K]> }
@@ -17,7 +17,7 @@ export interface CommChain<P, E> {
 class CommChainImpl implements CommChain<{}, {}> {
   constructor (private propOptionss: Dictionary<PropOptions>) {}
 
-  get Component () {
+  get Comm () {
     return Vue.extend({ props: this.propOptionss }) as any
   }
 
